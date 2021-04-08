@@ -46,6 +46,7 @@ document.body.addEventListener('keydown', e => {
 })
 
 function navigationViaButton(button){
+  if(prevNav) return;
   changeDirection(button.name)
 }
 
