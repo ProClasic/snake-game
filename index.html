@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="./js/script.js" defer></script>
+  <script src="./js/snake.js" defer></script>
+  <script src="./js/game.js" defer></script>
+  <title>Snake-Box</title>
+</head>
+<body>
+  <section id="game">
+    <h1>Snake Game</h1>
+    <span>score: <span id="score">0</span></span>
+    <div class="main">
+      <div id="board">
+        <section class="start-screen">
+          <button onclick="startGame()">start</button>
+        </section>
+      </div>
+    </div>
+    <div class="arrows">
+      <div class="container">
+        <button name="ArrowUp" onclick="navigationViaButton(this)">^</button>
+      </div>
+      <div class="container">
+        <button name="ArrowLeft" onclick="navigationViaButton(this)"><</button>
+        <button name="ArrowRight" onclick="navigationViaButton(this)">></button>
+      </div>
+      <div class="container">
+        <button name="ArrowDown" onclick="navigationViaButton(this)">v</button>
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>
